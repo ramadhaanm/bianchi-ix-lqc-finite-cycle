@@ -1,0 +1,10 @@
+Comparator checks, 2026-10-27. Not a new cache-equivalence experiment.
+PASS matching-directory acceptance check:
+Reference: C:\Users\M S I\OneDrive\Documents\quantum gravity project\results\revised
+Candidate: C:\Users\M S I\OneDrive\Documents\quantum gravity project\results\revised
+PASS K: all fields match exactly for 8 complete controlled records.
+PASS A: all fields match exactly for 8 complete controlled records.
+PASS: 16/16 records match; no numerical tolerance used.
+Execution methods must be established by the datasets generation logs.
+Local cache SHA256: 1d8f4e907a7ae77e4fc165424f24f88a6ef10f02c8a1979d05df01c61a2196cf
+PASS source-mismatch rejection check: old reference versus current candidate rejected.

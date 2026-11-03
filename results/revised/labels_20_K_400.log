@@ -1,0 +1,60 @@
+labels_L20_K_N400_on0.5_b300000: 7600 jobs, 16 threads; raw data -> C:\Users\M S I\OneDrive\Documents\quantum gravity project\julia\..\results\revised\labels_L20_K_N400_on0.5_b300000.csv
+labels_L20_K_N400_on0.5_b300000 190/7600 elapsed 0.0 min
+labels_L20_K_N400_on0.5_b300000 380/7600 elapsed 0.1 min
+labels_L20_K_N400_on0.5_b300000 570/7600 elapsed 0.1 min
+labels_L20_K_N400_on0.5_b300000 760/7600 elapsed 0.2 min
+labels_L20_K_N400_on0.5_b300000 950/7600 elapsed 0.2 min
+labels_L20_K_N400_on0.5_b300000 1140/7600 elapsed 0.2 min
+labels_L20_K_N400_on0.5_b300000 1330/7600 elapsed 0.3 min
+labels_L20_K_N400_on0.5_b300000 1520/7600 elapsed 0.3 min
+labels_L20_K_N400_on0.5_b300000 1710/7600 elapsed 0.4 min
+labels_L20_K_N400_on0.5_b300000 1900/7600 elapsed 0.4 min
+labels_L20_K_N400_on0.5_b300000 2090/7600 elapsed 0.4 min
+labels_L20_K_N400_on0.5_b300000 2280/7600 elapsed 0.5 min
+labels_L20_K_N400_on0.5_b300000 2470/7600 elapsed 0.5 min
+labels_L20_K_N400_on0.5_b300000 2660/7600 elapsed 0.6 min
+labels_L20_K_N400_on0.5_b300000 2850/7600 elapsed 0.6 min
+labels_L20_K_N400_on0.5_b300000 3040/7600 elapsed 0.7 min
+labels_L20_K_N400_on0.5_b300000 3230/7600 elapsed 0.7 min
+labels_L20_K_N400_on0.5_b300000 3420/7600 elapsed 0.8 min
+labels_L20_K_N400_on0.5_b300000 3610/7600 elapsed 0.8 min
+labels_L20_K_N400_on0.5_b300000 3800/7600 elapsed 0.9 min
+labels_L20_K_N400_on0.5_b300000 3990/7600 elapsed 0.9 min
+labels_L20_K_N400_on0.5_b300000 4180/7600 elapsed 1.0 min
+labels_L20_K_N400_on0.5_b300000 4370/7600 elapsed 1.2 min
+labels_L20_K_N400_on0.5_b300000 4560/7600 elapsed 1.3 min
+labels_L20_K_N400_on0.5_b300000 4750/7600 elapsed 1.4 min
+labels_L20_K_N400_on0.5_b300000 4940/7600 elapsed 1.4 min
+labels_L20_K_N400_on0.5_b300000 5130/7600 elapsed 1.5 min
+labels_L20_K_N400_on0.5_b300000 5320/7600 elapsed 1.5 min
+labels_L20_K_N400_on0.5_b300000 5510/7600 elapsed 1.6 min
+labels_L20_K_N400_on0.5_b300000 5700/7600 elapsed 1.6 min
+labels_L20_K_N400_on0.5_b300000 5890/7600 elapsed 1.7 min
+labels_L20_K_N400_on0.5_b300000 6080/7600 elapsed 1.7 min
+labels_L20_K_N400_on0.5_b300000 6270/7600 elapsed 1.8 min
+labels_L20_K_N400_on0.5_b300000 6460/7600 elapsed 1.8 min
+labels_L20_K_N400_on0.5_b300000 6650/7600 elapsed 1.9 min
+labels_L20_K_N400_on0.5_b300000 6840/7600 elapsed 1.9 min
+labels_L20_K_N400_on0.5_b300000 7030/7600 elapsed 2.1 min
+labels_L20_K_N400_on0.5_b300000 7220/7600 elapsed 2.1 min
+labels_L20_K_N400_on0.5_b300000 7410/7600 elapsed 2.1 min
+labels_L20_K_N400_on0.5_b300000 7600/7600 elapsed 2.2 min
+DONE labels_L20_K_N400_on0.5_b300000
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37

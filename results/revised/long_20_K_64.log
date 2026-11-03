@@ -1,0 +1,70 @@
+Execution cache: bit-identical Vern9 Double64 tables; SHA256=1d8f4e907a7ae77e4fc165424f24f88a6ef10f02c8a1979d05df01c61a2196cf
+long_L20_K_N64_on0.5_b300000: 256 jobs, 16 threads; raw data -> C:\Users\M S I\OneDrive\Documents\quantum gravity project\julia\..\results\revised\long_L20_K_N64_on0.5_b300000.csv
+long_L20_K_N64_on0.5_b300000 6/256 elapsed 2.0 min
+long_L20_K_N64_on0.5_b300000 12/256 elapsed 3.0 min
+long_L20_K_N64_on0.5_b300000 18/256 elapsed 4.2 min
+long_L20_K_N64_on0.5_b300000 24/256 elapsed 5.0 min
+long_L20_K_N64_on0.5_b300000 30/256 elapsed 5.2 min
+long_L20_K_N64_on0.5_b300000 36/256 elapsed 6.0 min
+long_L20_K_N64_on0.5_b300000 42/256 elapsed 6.8 min
+long_L20_K_N64_on0.5_b300000 48/256 elapsed 7.6 min
+long_L20_K_N64_on0.5_b300000 54/256 elapsed 10.2 min
+long_L20_K_N64_on0.5_b300000 60/256 elapsed 11.1 min
+long_L20_K_N64_on0.5_b300000 66/256 elapsed 12.7 min
+long_L20_K_N64_on0.5_b300000 72/256 elapsed 13.4 min
+long_L20_K_N64_on0.5_b300000 78/256 elapsed 14.7 min
+long_L20_K_N64_on0.5_b300000 84/256 elapsed 15.7 min
+long_L20_K_N64_on0.5_b300000 90/256 elapsed 18.3 min
+long_L20_K_N64_on0.5_b300000 96/256 elapsed 19.7 min
+long_L20_K_N64_on0.5_b300000 102/256 elapsed 21.2 min
+long_L20_K_N64_on0.5_b300000 108/256 elapsed 22.6 min
+long_L20_K_N64_on0.5_b300000 114/256 elapsed 23.3 min
+long_L20_K_N64_on0.5_b300000 120/256 elapsed 24.4 min
+long_L20_K_N64_on0.5_b300000 126/256 elapsed 25.0 min
+long_L20_K_N64_on0.5_b300000 132/256 elapsed 26.6 min
+long_L20_K_N64_on0.5_b300000 138/256 elapsed 27.2 min
+long_L20_K_N64_on0.5_b300000 144/256 elapsed 27.7 min
+long_L20_K_N64_on0.5_b300000 150/256 elapsed 29.0 min
+long_L20_K_N64_on0.5_b300000 156/256 elapsed 31.0 min
+long_L20_K_N64_on0.5_b300000 162/256 elapsed 32.7 min
+long_L20_K_N64_on0.5_b300000 168/256 elapsed 33.8 min
+long_L20_K_N64_on0.5_b300000 174/256 elapsed 34.4 min
+long_L20_K_N64_on0.5_b300000 180/256 elapsed 36.5 min
+long_L20_K_N64_on0.5_b300000 186/256 elapsed 37.1 min
+long_L20_K_N64_on0.5_b300000 192/256 elapsed 37.8 min
+long_L20_K_N64_on0.5_b300000 198/256 elapsed 39.4 min
+long_L20_K_N64_on0.5_b300000 204/256 elapsed 41.5 min
+long_L20_K_N64_on0.5_b300000 210/256 elapsed 42.0 min
+long_L20_K_N64_on0.5_b300000 216/256 elapsed 43.1 min
+long_L20_K_N64_on0.5_b300000 222/256 elapsed 44.4 min
+long_L20_K_N64_on0.5_b300000 228/256 elapsed 45.3 min
+long_L20_K_N64_on0.5_b300000 234/256 elapsed 46.3 min
+long_L20_K_N64_on0.5_b300000 240/256 elapsed 47.2 min
+long_L20_K_N64_on0.5_b300000 246/256 elapsed 49.4 min
+long_L20_K_N64_on0.5_b300000 252/256 elapsed 50.6 min
+long_L20_K_N64_on0.5_b300000 256/256 elapsed 51.1 min
+DONE long_L20_K_N64_on0.5_b300000
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
+┌ Warning: Verbosity toggle: max_iters 
+│  Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ DiffEqBase C:\Users\M S I\.julia\packages\DiffEqBase\R4JAC\src\check_error.jl:37
