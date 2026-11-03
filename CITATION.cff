@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite it as below."
+title: "Code and data for: Finite-cycle sensitivity and phase-resolved amplification in effective loop quantum Bianchi IX cosmology"
+authors:
+  - family-names: Ramadhan
+    given-names: Muhammad
+    email: ramadhaanm@gmail.com
+    affiliation: "Department of Informatics Engineering, Universitas Hasanuddin, Gowa, Indonesia"
+license: MIT
+repository-code: "REPLACE-WITH-GITHUB-URL"
