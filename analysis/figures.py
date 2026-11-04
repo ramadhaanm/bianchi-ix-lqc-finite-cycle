@@ -1,4 +1,4 @@
-"""Figures and generated LaTeX tables from completed v3 reanalysis only."""
+"""Figures and generated LaTeX tables from the completed analysis."""
 from pathlib import Path
 import json
 import numpy as np
@@ -11,6 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT/'paper/figs'
 GEN = ROOT/'paper/generated'
 COLORS = {'K':'#2368ac','A':'#b74c26'}
+
+
+def tag(letter,text):
+    """Panel title with a bold panel letter, e.g. (a) Classical GR."""
+    return r'$\mathbf{(' + letter + ')}$ ' + text
 
 
 def save(fig,name):
@@ -28,8 +33,8 @@ def make_figures(summary,runs,basin,include_long=True):
     classical=np.loadtxt(ROOT/'results/cl_basins_fig2_200_d64.csv',delimiter=',',comments='#',dtype=int)
     cmap=ListedColormap(['#9ec5f4','#d85045','black','#999999','white'])
     axs[0].imshow(classical,origin='lower',extent=[1,2,1,2],cmap=cmap,vmin=-1.5,vmax=3.5,interpolation='nearest')
-    axs[0].set_title('Classical GR')
-    for ax,e,title in zip(axs[1:],[1,3,6],['K: first bounce','K: first recollapse','K: second bounce']):
+    axs[0].set_title(tag('a','Classical GR'))
+    for ax,e,title,letter in zip(axs[1:],[1,3,6],['K: first bounce','K: first recollapse','K: second bounce'],'bcd'):
         grid=np.zeros((basin.N,basin.N),int)
         for k in basin.ids:
             r=basin.rows[k,'base']
@@ -37,16 +42,16 @@ def make_figures(summary,runs,basin,include_long=True):
             lab=int(np.argmin(a[:6:2]+a[1:6:2]))+1 if basin.valid(k,'base',e) else (-1 if r['reason']=='physical' else 0)
             grid.flat[k-1]=lab
         ax.imshow(grid,origin='lower',extent=[1,2,1,2],cmap=cmap,vmin=-1.5,vmax=3.5,interpolation='nearest')
-        ax.set_title(title)
+        ax.set_title(tag(letter,title))
     for ax in axs:
         ax.set_xlabel('$u$'); ax.set_xticks([1.2,1.5,1.8]); ax.set_yticks([1.2,1.5,1.8])
     axs[0].set_ylabel('$v$')
-    fig.text(.5,-.04,'Black / grey / white: axis 1 / 2 / 3; blue: physical exit; red: numerical or unresolved.',ha='center',fontsize=6.5)
+    fig.text(.5,-.04,'Black / grey / white: axis 1 / 2 / 3; blue: physical exit before the event.',ha='center',fontsize=6.5)
     save(fig,'fig1_basins')
 
     fig,axs=plt.subplots(1,2,figsize=(7.1,2.5),sharey=True)
     palette=['#ce5b32','#21866b','#4e63b0']
-    for ax,q in zip(axs,('K','A')):
+    for ax,q,letter in zip(axs,('K','A'),'ab'):
         for c,color in zip(range(1,4),palette):
             rows=summary['labels'][q]['events'][f'B{c}']['series'][1:]
             rows=[r for r in rows if r['n']]
@@ -60,7 +65,7 @@ def make_figures(summary,runs,basin,include_long=True):
                 ax.scatter([r['eps'] for r in zero],[r['ci'][1] for r in zero],marker='v',s=16,facecolors='none',edgecolors=color)
         ax.axhline(.1,lw=.6,ls='--',color='.5')
         ax.set_xscale('log'); ax.set_yscale('log'); ax.set_ylim(1e-3,1)
-        ax.set_xlabel(r'Initial separation $\varepsilon$'); ax.set_title(rf'{q} quantization, $\Lambda=20$')
+        ax.set_xlabel(r'Initial separation $\varepsilon$'); ax.set_title(tag(letter,rf'{q} quantization, $\Lambda=20$'))
         ax.grid(alpha=.2)
     axs[0].set_ylabel('Label disagreement fraction')
     handles,labels=axs[0].get_legend_handles_labels()
@@ -70,7 +75,7 @@ def make_figures(summary,runs,basin,include_long=True):
     order=['turnaround','contraction','bounce','expansion']
     labels=['Turnaround\n'+r'($\Delta\ln V=5$)','Deep\ncontraction','Bounce\nwindow','Expansion']
     fig,axs=plt.subplots(1,2,figsize=(7.1,2.6),sharey=True)
-    for ax,q in zip(axs,('K','A')):
+    for ax,q,letter in zip(axs,('K','A'),'ab'):
         for j,L in enumerate((10,20,30)):
             d=summary['phases'][f'{q}{L}']['cutoffs']['1']
             vals=[d[p]['median'] for p in order]
@@ -79,7 +84,7 @@ def make_figures(summary,runs,basin,include_long=True):
             ax.bar(x,vals,width=.25,color=['#a9c9e8','#508dc3','#1c5186'][j],label=rf'$\Lambda={L}$')
             ax.errorbar(x,vals,yerr=err,fmt='none',color='.2',lw=.8,capsize=2)
         ax.set_xticks(range(4),labels); ax.tick_params(axis='x',labelsize=7)
-        ax.set_title(f'{q} quantization'); ax.grid(axis='y',alpha=.2)
+        ax.set_title(tag(letter,f'{q} quantization')); ax.grid(axis='y',alpha=.2)
     axs[0].set_ylabel('Median log$_{10}$ amplification\n(95% bootstrap confidence interval)')
     axs[1].legend()
     save(fig,'fig3_phases')
@@ -105,7 +110,7 @@ def make_figures(summary,runs,basin,include_long=True):
         return
 
     fig,axs=plt.subplots(1,2,figsize=(7.1,2.5),sharey=True)
-    for ax,ev in zip(axs,('B','R')):
+    for ax,ev,letter in zip(axs,('B','R'),'ab'):
         for q,dx in [('K',-.06),('A',.06)]:
             st=summary['growth'][q]['steps'][ev]
             x=np.arange(1,6)+dx
@@ -119,7 +124,7 @@ def make_figures(summary,runs,basin,include_long=True):
                                 textcoords='offset points',fontsize=6,ha='center',color=COLORS[q],
                                 bbox=dict(facecolor='white',edgecolor='none',alpha=.8,pad=.2))
         ax.set_xticks(range(1,6),[f'{c}\u2013{c+1}' for c in range(1,6)])
-        ax.set_xlabel('Consecutive cycles'); ax.set_title('Bounces' if ev=='B' else 'Recollapses'); ax.grid(alpha=.2)
+        ax.set_xlabel('Consecutive cycles'); ax.set_title(tag(letter,'Bounces' if ev=='B' else 'Recollapses')); ax.grid(alpha=.2)
     axs[0].set_ylabel('Median log$_{10}$ amplification per cycle')
     axs[1].legend(); save(fig,'fig5_longrun')
 
