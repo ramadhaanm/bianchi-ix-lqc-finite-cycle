@@ -1,6 +1,6 @@
 {
   "analysis/check_data.py": "e8d7f129e2d0222b748919e5dd93053414e0e41ce99507b73d71c417e11faaeb",
-  "analysis/figures.py": "af19ab931d7de59e7f192d0bdf9c31060a5c764cbde885724de7d9bc7eae64d7",
+  "analysis/figures.py": "8cea8f153bcc21f0793ff419e9a3f22d518b2b9a92c11146fa53f4c4d8006b72",
   "analysis/reanalyze.py": "d206ab8a4e6453c93bcb5649a9737a517b3893f4b20446992f00b76363be4844",
   "analysis/test_reanalysis.py": "b0c6dcbf660b29cadbb407aa4146078fc27b05647b917d6ba8e2ecf44aaa144e",
   "CITATION.cff": "8068c147bfd484812aaea5c8e34fb4d24c406aa2c487704cb0294d89028db631",
@@ -60,8 +60,8 @@
   "results/revised/phase_L20_K_N4_on0.5_b300000.csv": "04de7ada0cc80de05105754cf03d9f09e262ea2c9b2bd31bcb00fb72ccc88da3",
   "results/revised/phase_L30_A_N1000_on0.5_b300000.csv": "6a04eaddf0ce665cbb7113f2f947b0adc183f3cf8e658135e1ee66d83cd700dd",
   "results/revised/phase_L30_K_N1000_on0.5_b300000.csv": "2db443c0924b36cd63ed4ce9b2208874ebf31c70e26e018bacf89da520ef50d1",
-  "results/revised/RESULTS.md": "69ca58e717cfe3c2d01fde5607a64acbcfdef8d3f8e22f7a7b931601a4b427c5",
-  "results/revised/summary.json": "769b63c927023eda8302f0d815d0d492bfc87611a4b3d5d9ebfed8cba93ac0de",
+  "results/revised/RESULTS.md": "6a6e4acbb31de70a3d2ee5004551afad0aba05f1163baab1bc93fc829a81eab7",
+  "results/revised/summary.json": "0d98463a571665ded95253ebf9e26e13d76cecc0ebf1cde0072dea307b1b32c9",
   "results/uncertainty_classical_d64.txt": "43d5844345e40a26e17be7ad09c8f7670c8575fd4a1c41dd4a2908cc1805b62e",
   "tools/finish_reanalysis.ps1": "46e6f9dae20b07a34eeca020f04fa5f5218cf505c8d20774c1b9626e665f6f30",
   "tools/run_all.sh": "ccb4261bcd566f3d084f8115768e4c560b8a1c8a40b9dacf9965199eb66273d4",

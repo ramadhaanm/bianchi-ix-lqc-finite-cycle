@@ -172,7 +172,7 @@ def make_tables(summary,write_report=True):
             z=summary['growth'][q]['steps'][ev+'_cohort']
             macro.append('\\newcommand{\\'+q+'Long'+ev+'}{'+fmt(z,False)+'}')
     (GEN/'numbers.tex').write_text('\n'.join(macro)+'\n')
-    report=['Corrected reanalysis: all quoted intervals are 95% percentile-bootstrap intervals of the median.','',
+    report=['Analysis summary: all quoted intervals are 95% percentile-bootstrap intervals of the median.','',
         'Pathwise threshold and constraint exits are irreversible. Event survival refers to reaching R_n before an exit.',
         'Counts of complete/physical/constraint/budget/integration below refer to the whole requested run; phase runs also attempt P_3.','']
     for name,d in summary['phases'].items():

@@ -1,4 +1,4 @@
-Corrected reanalysis: all quoted intervals are 95% percentile-bootstrap intervals of the median.
+Analysis summary: all quoted intervals are 95% percentile-bootstrap intervals of the median.
 
 
 
