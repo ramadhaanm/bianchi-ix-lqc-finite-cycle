@@ -3,7 +3,7 @@
   "analysis/figures.py": "8cea8f153bcc21f0793ff419e9a3f22d518b2b9a92c11146fa53f4c4d8006b72",
   "analysis/reanalyze.py": "d206ab8a4e6453c93bcb5649a9737a517b3893f4b20446992f00b76363be4844",
   "analysis/test_reanalysis.py": "b0c6dcbf660b29cadbb407aa4146078fc27b05647b917d6ba8e2ecf44aaa144e",
-  "CITATION.cff": "8068c147bfd484812aaea5c8e34fb4d24c406aa2c487704cb0294d89028db631",
+  "CITATION.cff": "235cb36507f03d8fa2a23b7df39c126e62153d82056801ce9b3871d9bc6c98b3",
   "derivations/01_symbolic_checks.py": "5cb27d213f0cd7518ff466578665db1de280b69a6ff4cfacbd3983422e896fed",
   "derivations/02_numerical_checks.py": "4808c7591481da534e9ab0f0268db4ffa325a6b17d623cf578aa1a260d9b5a91",
   "derivations/03_A_quantization.py": "efbd88ced2408ff22fe84c550efcd6a7398438a1aafdbcb534fd41b38408cedb",
