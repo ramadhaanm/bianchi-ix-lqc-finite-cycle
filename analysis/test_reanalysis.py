@@ -1,4 +1,4 @@
-"""Scientific regression checks for the revised statistical definitions."""
+"""Scientific regression checks for the statistical definitions."""
 import unittest
 import sys
 import numpy as np

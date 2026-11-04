@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Re-run of the v3 pipeline (same jobs as review/run_reanalysis.ps1) after the fix of the
-# constraint-residual normalization (julia/BianchiLQC.jl, constraint_error), 2026-10-26.
-# The superseded outputs are in results/revised_v3_constraint_false_alarms_2026-10-26/.
+# Full production matrix (same jobs as tools/run_reanalysis.ps1), run sequentially with all available threads.
 # Order: ordinary-precision ensembles for K and A first, extended-precision six-cycle runs last.
 set -u
 cd "$(dirname "$0")/.."

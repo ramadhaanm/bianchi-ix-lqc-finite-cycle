@@ -1,6 +1,6 @@
-"""Analyze only v3 pathwise-filtered raw records; generate manuscript tables and figures.
+"""Analyze the pathwise-filtered raw records; generate the manuscript tables and figures.
 
-Run after review/run_reanalysis.ps1 finishes for both K and A:
+Run after tools/run_reanalysis.ps1 finishes for both K and A:
     .venv/Scripts/python analysis/reanalyze.py
 Use --partial for inspection during an unfinished run; no manuscript artifacts are then written.
 """
@@ -295,7 +295,7 @@ def main():
 
 def make_artifacts(summary,runs,basin):
     # Imported here so --partial remains lightweight and cannot overwrite manuscript figures.
-    from revised_figures import make_figures, make_tables
+    from figures import make_figures, make_tables
     make_figures(summary,runs,basin)
     make_tables(summary)
 

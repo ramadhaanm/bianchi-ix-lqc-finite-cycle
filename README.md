@@ -7,7 +7,8 @@ Universitas Hasanuddin, Gowa, Indonesia).
 - `julia/`: effective Bianchi IX integrators (K and A quantizations), event construction, tests
 - `analysis/`: statistics, figures and table generation; `derivations/`: symbolic and numerical checks
 - `results/revised/`: raw trajectory records and the summary used by the manuscript
-- `REPRODUCE_REVISED.md`: full reproduction instructions (start here)
+- `tools/`: run drivers and validation logs
+- `REPRODUCE.md`: full reproduction instructions (start here)
 
 Code and data are released under the MIT License (see `LICENSE`).
 

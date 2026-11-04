@@ -1,5 +1,0 @@
-PASS K: all fields match exactly for 8 complete trajectory records (base, control, and two perturbations at 2 points).
-PASS A: all fields match exactly for 8 complete trajectory records (base, control, and two perturbations at 2 points).
-PASS: 16/16 complete records match the uncached reference; no numerical tolerance was used for this comparison.
-Cache SHA256: 1d8f4e907a7ae77e4fc165424f24f88a6ef10f02c8a1979d05df01c61a2196cf
-Each cached launch separately verifies all three immutable coefficient tables against the generic constructors byte for byte.

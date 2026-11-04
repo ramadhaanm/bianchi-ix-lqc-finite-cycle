@@ -18,15 +18,11 @@ do {
 } while (($counts | Measure-Object -Minimum).Minimum -lt 256)
 Start-Sleep -Seconds 2
 
-foreach ($script in @('analysis/reanalyze.py','analysis/check_revised_data.py','analysis/test_reanalysis.py')) {
+foreach ($script in @('analysis/reanalyze.py','analysis/check_data.py','analysis/test_reanalysis.py')) {
     Write-Output "Running $script"
     $ErrorActionPreference = 'Continue'
     & .venv/Scripts/python $script 2>&1 | Tee-Object -FilePath ('results/revised/final_' + [System.IO.Path]::GetFileNameWithoutExtension($script) + '.log')
     $ErrorActionPreference = 'Stop'
     if ($LASTEXITCODE -ne 0) { throw "Failed: $script" }
 }
-$ErrorActionPreference = 'Continue'
-& .venv/Scripts/python review/build_pdf.py 2>&1 | Tee-Object -FilePath results/revised/final_latex.log
-$ErrorActionPreference = 'Stop'
-if ($LASTEXITCODE -ne 0) { throw 'LaTeX compilation failed' }
-Write-Output 'Analysis, data audit, statistical tests, and PDF build complete. Visual review and interpretation still required.'
+Write-Output 'Analysis, data audit, and statistical tests complete. Visual review and interpretation still required.'
